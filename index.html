@@ -1,0 +1,78 @@
+<!--
+    Author: Xenaki Maria
+
+    Περιγραφή:
+
+        Σελίδα που φιλοξενεί τον υπολογισμό διακρίνουσας δευτεροβάθμιας εξίσωσης
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions Project</title>
+        <script src ="diakrinousa.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body style="text-align: center;">
+    
+    <h2 style="color: rgb(1, 95, 1);">Υπολογισμός Διακρίνουσας και επίλυση δευτεροβάθμιας εξίσωσης</h2>
+        
+    Με την εύρεση της Διακρίνουσας (Δ) μπορούμε να υπολογίσουμε τις πιθανές τιμές του αγνώστου <b>x</b>  μιας δευτεροβάθμιας εξίσωσης <b>αx<sup>2</sup>+βx+γ=0</b>. <br>
+
+    
+    <b> Υπολογισμός διακρίνουσας:  Δ=β<sup>2</sup>-4‧α‧γ </b>       
+       
+    <br>
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <th></th>
+            <th>Λύσεις της εξίσωσης:</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Εάν Δ > 0</td>
+            <td>Εάν Δ = 0</td>
+            <td>Εάν Δ < 0</td>
+        </tr>
+        <tr>
+            <td>(X <sub>1,2</sub>) = (-β ± √Δ)/2α <br>
+                H εξίσωση έχει 2 ρίζες (λύσεις) Χ<sub>1,2</sub><br>
+             <td>(X <sub>1,2</sub>) = -β/2α <br>
+                H εξίσωση έχει 1 διπλή ρίζα (λύση) Χ<sub>1,2</sub><br>
+            <td>Δεν υπάρχουν πραγματικές ρίζες (∈ R)</td>
+        </tr>
+
+    </table>
+    <br>
+   
+    <b>Παρακαλώ εισάγετε στα αντίστοιχα πεδία που ακολουθούν τις τιμές των <i>α, β</i> και <i>γ</i>.</b> 
+    <form> <!-- Δημιουργία φόρμας, η οποία μας επιτρέπει να κάνουμε εύκολα καθαρισμό πολλαπλών πεδίων -->
+    
+        <input type="a" id="value1" class="inelements" placeholder="α">
+
+        <label for="x">x <sup>2</sup>  +</label>
+        
+        <input type="b" id="value2" class="inelements" placeholder="β">
+
+        <label for="x">x  +</label>
+        
+        <input type="g" id="value3" class="inelements" placeholder="γ">
+
+        <label for="x"> = 0</label> <br>
+
+        <input type="button" onclick="calc_D()" value="Υπολογισμός" style="margin-right: 10px;">
+        <input type="reset" onclick="clearResults()" value="Καθαρισμός Πεδίων"> <!-- Καθαρίζουμε τόσο τα δεδομένα που εισήγαγε ο χρήστης, όσο και τον πίνακα αποτελεσμάτων
+         -->
+    </form>
+
+    <br>
+
+    <div class="results"> <!--ορισμός τρόπου εμφάνισης αποτελεσμάτων-->
+        <p id = "grammi1"></p>
+        <p id = "grammi2"></p>
+        <p id = "grammi3"></p>
+    </div>
+
+</html>
+
+</body>

@@ -1,0 +1,27 @@
+body{
+  background-color:rgb(244, 241, 241);
+  line-height: 35px;
+}
+table, td, tr{
+  border: solid 1px;
+}
+
+
+td{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.inelements {
+  overflow: hidden; 
+  width: 50px;
+}         
+
+.results{
+  border: 2px solid black; 
+  height: 170px; 
+  padding: 10px; 
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgb(230, 238, 230);
+}
